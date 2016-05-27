@@ -1,9 +1,27 @@
-<mvc:View controllerName="com.ideacentral.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ideacentral.controller.App">
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
-				<content></content>
+				<content>
+				    <Bar id="__bar0">
+				    <contentMiddle>
+				        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://idea-wall" size="2em" id="__icon1"/>
+				    </contentMiddle>
+				    </Bar>
+				    <FeedInput id="__input0" placeholder="Share your own idea here.." icon="sap-icon://lightbulb" showIcon="true"/>
+				    <Panel id="__panel0" headerText="New Ideas" expandable="true" expanded="true">
+				        <content>
+				            <FeedListItem counter="0" icon="sap-icon://personnel-view" sender="John Doe" text="Mandatory power nap" info="Approved" timestamp="Dec 02, 2012" maxCharacters="0" id="__item0" busy="false" selected="false" senderActive="true" showIcon="false"/>
+				            <FeedListItem counter="1" icon="sap-icon://personnel-view" sender="Erick Tan" text="Free Starbucks voucher every month" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item1"/>
+				        </content>
+				    </Panel>
+				    <Panel id="__panel1" headerText="Popular Ideas" expandable="true" expanded="true">
+				        <content>
+				            <FeedListItem counter="0" icon="sap-icon://personnel-view" sender="John Doe" text="Feed List Item text" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item2"/>
+				            <FeedListItem counter="0" icon="sap-icon://personnel-view" sender="John Doe" text="Feed List Item text" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item3"/>
+				        </content>
+				    </Panel>
+				</content>
 			</Page>
 		</pages>
 	</App>
