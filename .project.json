@@ -7,7 +7,7 @@
     "targetFolder": "dist",
     "sourceFolder": "webapp",
     "buildRequired": true,
-    "lastBuildDateTime": "Sat, 28 May 2016 01:36:03 GMT"
+    "lastBuildDateTime": "Sat, 28 May 2016 01:49:19 GMT"
   },
   "generation": [
     {
@@ -37,7 +37,7 @@
   },
   "hcpdeploy": {
     "account": "s0002316332trial",
-    "name": "ideacentral",
-    "lastVersionWeTriedToDeploy": "1.0.3"
+    "name": "ideacentral2",
+    "lastVersionWeTriedToDeploy": "1.0.0"
   }
 }

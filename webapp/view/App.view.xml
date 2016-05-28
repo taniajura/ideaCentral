@@ -1,4 +1,7 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ideacentral.controller.App">
+<mvc:View	xmlns:html="http://www.w3.org/1999/xhtml" 
+			xmlns:mvc="sap.ui.core.mvc" 
+			xmlns="sap.m" 
+			controllerName="com.ideacentral.controller.App">
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
@@ -7,13 +10,13 @@
 				    <contentMiddle>
 				    </contentMiddle>
 				    <contentLeft>
-				        <Label text="Hello Erick!" width="100%" id="__label0"/>
+				        <Label text="Hello {employee>/FirstName}!" width="100%" id="__label0"/>
 				    </contentLeft>
 				    <contentRight>
 				        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://idea-wall" size="2em" id="__icon1"/>
 				    </contentRight>
 				    </Bar>
-				    <Panel id="__panel5" headerText="Open Challenge" expandable="true" expanded="true">
+				    <Panel id="__panel5" headerText="Open Challenge" expandable="true" expanded="false">
 				        <content>
 				        <ObjectListItem type="Active" counter="0" title="Reduce boiler room incident" number="1,000.00" numberUnit="$" intro="Reduce boiler room incident and be rewarded." markFavorite="false" markFlagged="false" showMarkers="false" id="__item6" activeIcon="sap-icon://wounds-doc" icon="sap-icon://wounds-doc">
 				            <attributes>
@@ -27,10 +30,10 @@
 				            </secondStatus></ObjectListItem>
 				        </content>
 				    </Panel>
-				    <Panel id="__panel0" headerText="New Ideas" expandable="true" expanded="false">
+				    <Panel id="__panel0" headerText="New Ideas" expandable="true" expanded="true">
 				        <content>
 				            <FeedListItem counter="0" icon="sap-icon://personnel-view" sender="John Doe" text="Mandatory power nap" info="Approved" timestamp="Dec 02, 2012" maxCharacters="0" id="__item0" busy="false" selected="false" senderActive="true" showIcon="false"/>
-				            <FeedListItem counter="1" icon="sap-icon://personnel-view" sender="Erick Tan" text="Free Starbucks voucher every month" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item1"/>
+				            <FeedListItem counter="1" icon="sap-icon://personnel-view" sender="{employee>/FirstName}" text="Free Starbucks voucher every month" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item1"/>
 				        </content>
 				    </Panel>
 				    <Panel id="__panel1" headerText="Popular Ideas" expandable="true" expanded="false">

@@ -61,6 +61,11 @@
 				"settings": {
 					"bundleName": "com.ideacentral.i18n.i18n"
 				}
+			},
+			
+			"employee": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/Employee.json"
 			}
 		},
 		"resources": {
