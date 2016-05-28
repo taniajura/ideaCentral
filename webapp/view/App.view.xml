@@ -5,20 +5,91 @@
 				<content>
 				    <Bar id="__bar0">
 				    <contentMiddle>
-				        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://idea-wall" size="2em" id="__icon1"/>
 				    </contentMiddle>
+				    <contentLeft>
+				        <Label text="Hello Erick!" width="100%" id="__label0"/>
+				    </contentLeft>
+				    <contentRight>
+				        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://idea-wall" size="2em" id="__icon1"/>
+				    </contentRight>
 				    </Bar>
-				    <FeedInput id="__input0" placeholder="Share your own idea here.." icon="sap-icon://lightbulb" showIcon="true"/>
-				    <Panel id="__panel0" headerText="New Ideas" expandable="true" expanded="true">
+				    <Panel id="__panel5" headerText="Open Challenge" expandable="true" expanded="true">
+				        <content>
+				        <ObjectListItem type="Active" counter="0" title="Reduce boiler room incident" number="1,000.00" numberUnit="$" intro="Reduce boiler room incident and be rewarded." markFavorite="false" markFlagged="false" showMarkers="false" id="__item6" activeIcon="sap-icon://wounds-doc" icon="sap-icon://wounds-doc">
+				            <attributes>
+				                <ObjectAttribute text="Open" active="true" id="__attribute0"/>
+				            </attributes>
+				            <firstStatus>
+				                <ObjectStatus text="Send us your ideas" id="__status0" state="Success"/>
+				            </firstStatus>
+				            <secondStatus>
+				                <ObjectStatus text="by 31 May 2016" id="__status1"/>
+				            </secondStatus></ObjectListItem>
+				        </content>
+				    </Panel>
+				    <Panel id="__panel0" headerText="New Ideas" expandable="true" expanded="false">
 				        <content>
 				            <FeedListItem counter="0" icon="sap-icon://personnel-view" sender="John Doe" text="Mandatory power nap" info="Approved" timestamp="Dec 02, 2012" maxCharacters="0" id="__item0" busy="false" selected="false" senderActive="true" showIcon="false"/>
 				            <FeedListItem counter="1" icon="sap-icon://personnel-view" sender="Erick Tan" text="Free Starbucks voucher every month" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item1"/>
 				        </content>
 				    </Panel>
-				    <Panel id="__panel1" headerText="Popular Ideas" expandable="true" expanded="true">
+				    <Panel id="__panel1" headerText="Popular Ideas" expandable="true" expanded="false">
 				        <content>
 				            <FeedListItem counter="0" icon="sap-icon://personnel-view" sender="John Doe" text="Feed List Item text" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item2"/>
 				            <FeedListItem counter="0" icon="sap-icon://personnel-view" sender="John Doe" text="Feed List Item text" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item3"/>
+				        </content>
+				    </Panel>
+				    <Panel id="__panel2" headerText="Ideas in Action" expandable="true" expanded="true">
+				        <content>
+					        <VBox width="100%" direction="Column" id="__vbox0">
+					        	<items>
+						            <FeedListItem counter="0" icon="sap-icon://personnel-view" sender="John Doe" text="Feed List Item text" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item4"/>
+									<IconTabBar id="idIconTabBarFiori2" upperCase="true" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+										<items>
+											<IconTabFilter text="Comments" count="3">
+											</IconTabFilter>
+											<IconTabFilter text="Likes" count="4321">
+											</IconTabFilter>
+											<IconTabFilter text="Dislikes" count="333">
+											</IconTabFilter>
+										</items>
+									</IconTabBar>						            	
+					        	</items>
+				        	</VBox>
+					        <VBox width="100%" direction="Column" id="__vbox1">
+					        	<items>
+						            <FeedListItem counter="0" icon="sap-icon://personnel-view" sender="John Doe" text="Feed List Item text" info="Waiting for Approval" timestamp="Dec 02, 2012" maxCharacters="0" id="__item5"/>
+									<IconTabBar id="idIconTabBarFiori2a" upperCase="true" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+										<items>
+											<IconTabFilter text="Comments" count="3">
+											</IconTabFilter>
+											<IconTabFilter text="Likes" count="4321">
+											</IconTabFilter>
+											<IconTabFilter text="Dislikes" count="333">
+											</IconTabFilter>
+										</items>
+									</IconTabBar>						            	
+					        	</items>
+				        	</VBox>
+				        </content>
+				    </Panel>
+				    <Panel id="__panel3" headerText="Your Own Ideas" expandable="true">
+				    	<content>
+				            <FeedInput id="__input0" placeholder="Share your idea..." icon="sap-icon://lightbulb" showIcon="true"/>
+					    	<Panel id="__panel4" headerText="My idea will..." expandable="true">
+						        <content>
+						            <HBox width="100%" id="__hbox0" fitContainer="true" wrap="Wrap" justifyContent="SpaceBetween">
+						                <items>
+						                    <CheckBox id="__box0" text="Reduce Cost"/>
+						                    <CheckBox id="__box1" text="Improve Process"/>
+						                    <CheckBox id="__box2" text="Increase Productivity"/>
+						                    <CheckBox id="__box3" text="Improve Quality"/>
+						                    <CheckBox id="__box4" text="Increase Safety"/>
+						                    <CheckBox id="__box5" text="Others"/>
+						                </items>
+						            </HBox>
+						        </content>
+					        </Panel>
 				        </content>
 				    </Panel>
 				</content>
